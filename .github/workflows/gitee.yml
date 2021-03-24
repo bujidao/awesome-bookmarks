@@ -10,7 +10,7 @@ jobs:
       - name: Sync to Gitee 💕
         uses: wearerequired/git-mirror-action@master
         env:
-          SSH_PRIVATE_KEY: ${{ secrets.GITEE_PRIVATE_KEY }}
+          SSH_PRIVATE_KEY: ${{ secrets.ACTION_DEPLOY_KEY_BLOG_PRI }}
         with:
-          source-repo: 'git@github.com:PanJiaChen/awesome-bookmarks.git'
-          destination-repo: 'git@gitee.com:panjiachen/awesome-bookmarks.git'
+          source-repo: 'git@github.com:bujidao/awesome-bookmarks.git'
+          destination-repo: 'git@github.com:bujidao/awesome-bookmarks.git'
